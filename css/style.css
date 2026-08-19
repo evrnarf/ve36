@@ -938,26 +938,40 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   }
   .nav__sub-toggle[aria-expanded="true"]{color:var(--gold)}
   .nav__sub-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
-  .mega{
-    position:static;display:none;width:auto;transform:none;visibility:visible;
-    pointer-events:auto;background:transparent;border:0;box-shadow:none;
-    opacity:1;max-height:none;overflow:visible;transition:none;
-    padding:4px 0 12px;
+  /* Panelin masaüstü yerleşimi (sabit genişlik + yatay ortalama) mobilde
+     tamamen sıfırlanır. Aksi halde panel ekranın soluna taşar.
+     Seçiciler bilerek yüksek özgüllükte yazılmıştır; masaüstü kuralları
+     kaynak sırasından bağımsız olarak ezilemesin diye. */
+  .nav .nav__has-mega .mega{
+    position:static;display:none;
+    inset:auto;left:auto;right:auto;top:auto;bottom:auto;
+    width:auto;min-width:0;max-width:100%;
+    transform:none;visibility:visible;opacity:1;
+    background:transparent;border:0;box-shadow:none;border-radius:0;
+    max-height:none;overflow:visible;transition:none;
+    padding:4px 0 12px;margin:0;
   }
-  .nav__has-mega.is-sub-open .mega{display:block}
+  .nav .nav__has-mega.is-sub-open .mega{display:block}
   .mega::before{display:none}
   .mega__head{display:none}
+
   /* Tek sütun, alt alta. Nüfus rakamları mobilde gizlenir; satır tek
      parça kaldığı için hizalama kaymaz. */
-  .mega__grid{display:block}
-  .mega__link{
-    display:block;padding:12px 0;
+  .nav .mega__grid{
+    display:block;width:auto;grid-template-columns:none;gap:0;
+  }
+  .nav .mega__link{
+    display:block;width:auto;padding:12px 0;
     border-bottom:1px solid rgba(255,255,255,.07);
   }
   .mega__link:hover,.mega__link[aria-current="page"]{background:transparent}
   .mega__ad{color:var(--on-navy-1);font-size:15px}
   .mega__link[aria-current="page"] .mega__ad{color:var(--gold)}
-  .mega__nufus{display:none}
+  .nav .mega__nufus{display:none}
+
+  /* Son güvenlik: menü içinde hiçbir şey yatayda taşamaz. */
+  .nav{overflow-x:hidden}
+  .nav *{max-width:100%}
   .mega__note{display:none}
   /* Mobilde kırmızı buton başlıkta kalır, menü panelinde tekrar edilmez */
   .header__actions{margin-left:auto;margin-right:6px}

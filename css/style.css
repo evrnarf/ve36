@@ -555,11 +555,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     background:var(--navy);
     border-bottom:1px solid rgba(255,255,255,.10);
     padding:8px 32px 28px;
-    transform:translateY(-12px);opacity:0;pointer-events:none;
-    transition:opacity .25s ease,transform .25s ease;
+    display:none;
     max-height:calc(100vh - var(--header-h));overflow:auto;
   }
-  .nav.is-open{opacity:1;transform:none;pointer-events:auto}
+  .nav.is-open{display:flex}
   .nav__list{flex-direction:column;align-items:stretch;gap:0}
   .nav__list-cta{display:list-item}
   .nav__link{display:block;white-space:normal;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -948,12 +947,17 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .nav__has-mega.is-sub-open .mega{display:block}
   .mega::before{display:none}
   .mega__head{display:none}
-  .mega__grid{grid-template-columns:1fr 1fr;gap:0 10px}
-  .mega__link{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+  /* Tek sütun, alt alta. Nüfus rakamları mobilde gizlenir; satır tek
+     parça kaldığı için hizalama kaymaz. */
+  .mega__grid{display:block}
+  .mega__link{
+    display:block;padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.07);
+  }
   .mega__link:hover,.mega__link[aria-current="page"]{background:transparent}
-  .mega__ad{color:var(--on-navy-1);font-size:14px}
+  .mega__ad{color:var(--on-navy-1);font-size:15px}
   .mega__link[aria-current="page"] .mega__ad{color:var(--gold)}
-  .mega__nufus{color:var(--on-navy-8);font-size:11.5px}
+  .mega__nufus{display:none}
   .mega__note{display:none}
   /* Mobilde kırmızı buton başlıkta kalır, menü panelinde tekrar edilmez */
   .header__actions{margin-left:auto;margin-right:6px}

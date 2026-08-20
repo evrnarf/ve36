@@ -1,0 +1,236 @@
+{
+  "_bilgi": {
+    "aciklama": "Eskişehir ilçe verileri. Bu dosya tüm ilçe sayfalarının TEK kaynağıdır. Sayfaları yeniden üretmek için: python3 build.py",
+    "nufus_kaynagi": "TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi (ADNKS), 2025 yıl sonu",
+    "nufus_dogrulama": "14 ilçenin toplamı 927.956'dır ve TÜİK'in açıkladığı Eskişehir il nüfusuyla birebir örtüşmektedir.",
+    "yuzolcumu_uyarisi": "DİKKAT: Yüzölçümü değerleri açık kaynaklardan derlenmiştir ve RESMİ TEYİT BEKLEMEKTEDİR. Toplamı ilin resmi yüzölçümü (13.960 km²) ile örtüşmemektedir. Yayına almadan önce Valilik / İl Özel İdaresi kayıtlarından doğrulanmalıdır. Doğrulanmayan değerler icin 'yuzolcumu' alanı null bırakılabilir; sayfada otomatik olarak gizlenir.",
+    "kaymakamlik_uyarisi": "Kaymakamlık adresleri standart kamu alan adı biçimine göre yazılmıştır. Her biri yayından önce tek tek açılıp teyit edilmelidir."
+  },
+  "ilceler": [
+    {
+      "slug": "odunpazari",
+      "ad": "Odunpazarı",
+      "tip": "Merkez ilçe",
+      "nufus": 431652,
+      "yuzolcumu": 1181,
+      "gecim": "Ticaret, hizmet sektörü ve kültür turizmi",
+      "kaymakamlik": "https://odunpazari.gov.tr",
+      "ozet": "Eskişehir'in en kalabalık ilçesi ve kentin tarihi çekirdeğidir. Tescilli Odunpazarı Evleri, lületaşı işçiliği ve yoğun kültür-sanat hayatıyla şehrin kimliğini taşıyan merkez ilçedir.",
+      "one_cikan": [
+        "Tarihi Odunpazarı Evleri",
+        "Lületaşı el sanatları",
+        "Kültür ve sanat merkezleri"
+      ],
+      "yogunluk": 365
+    },
+    {
+      "slug": "tepebasi",
+      "ad": "Tepebaşı",
+      "tip": "Merkez ilçe",
+      "nufus": 398129,
+      "yuzolcumu": 1325,
+      "gecim": "Sanayi, eğitim ve hizmet sektörü",
+      "kaymakamlik": "https://tepebasi.gov.tr",
+      "ozet": "Porsuk Çayı'nın kuzeyinde yer alan ikinci merkez ilçedir. Üniversite yerleşkeleri, organize sanayi alanları ve modern kentsel dokusuyla şehrin eğitim ve üretim ekseninde öne çıkar.",
+      "one_cikan": [
+        "Üniversite yerleşkeleri",
+        "Organize sanayi alanları",
+        "Porsuk kıyısı kent yaşamı"
+      ],
+      "yogunluk": 300
+    },
+    {
+      "slug": "sivrihisar",
+      "ad": "Sivrihisar",
+      "tip": "İlçe",
+      "nufus": 20189,
+      "yuzolcumu": 2781,
+      "gecim": "Tarım ve hayvancılık",
+      "kaymakamlik": "https://sivrihisar.gov.tr",
+      "ozet": "Yüzölçümü bakımından ilin en geniş ilçesidir. Selçuklu ve Osmanlı dönemine ait zengin mimari mirası, Nasreddin Hoca'nın doğduğu Hortu köyü ve geniş tarım arazileriyle bilinir.",
+      "one_cikan": [
+        "Ulu Cami ve tarihi doku",
+        "Nasreddin Hoca'nın doğduğu köy",
+        "Pessinus antik kenti"
+      ],
+      "yogunluk": 7
+    },
+    {
+      "slug": "cifteler",
+      "ad": "Çifteler",
+      "tip": "İlçe",
+      "nufus": 14487,
+      "yuzolcumu": 852,
+      "gecim": "Tarım ve hayvancılık",
+      "kaymakamlik": "https://cifteler.gov.tr",
+      "ozet": "Sakarya Nehri'nin doğduğu Sakaryabaşı ile tanınır. Köklü hara geleneği, su kaynakları ve verimli tarım arazileri ilçe ekonomisinin temelini oluşturur.",
+      "one_cikan": [
+        "Sakaryabaşı su kaynakları",
+        "Hara ve at yetiştiriciliği",
+        "Tarımsal üretim"
+      ],
+      "yogunluk": 17
+    },
+    {
+      "slug": "seyitgazi",
+      "ad": "Seyitgazi",
+      "tip": "İlçe",
+      "nufus": 12565,
+      "yuzolcumu": 1574,
+      "gecim": "Tarım ve hayvancılık",
+      "kaymakamlik": "https://seyitgazi.gov.tr",
+      "ozet": "Seyyid Battal Gazi Külliyesi ve Frig Vadisi'ne açılan kapısıyla ilin kültürel derinliğini taşıyan ilçedir. Türkmen Dağı çevresinde geniş kırsal yerleşim alanları bulunur.",
+      "one_cikan": [
+        "Seyyid Battal Gazi Külliyesi",
+        "Frig Vadisi kaya anıtları",
+        "Türkmen Dağı"
+      ],
+      "yogunluk": 8
+    },
+    {
+      "slug": "alpu",
+      "ad": "Alpu",
+      "tip": "İlçe",
+      "nufus": 9725,
+      "yuzolcumu": 931,
+      "gecim": "Tarım, özellikle şeker pancarı üretimi",
+      "kaymakamlik": "https://alpu.gov.tr",
+      "ozet": "Porsuk Ovası'nın verimli topraklarında yer alır. Şeker pancarı başta olmak üzere yoğun tarımsal üretim ve lületaşı yatakları ilçenin öne çıkan değerleridir.",
+      "one_cikan": [
+        "Şeker pancarı üretimi",
+        "Lületaşı yatakları",
+        "Porsuk Ovası tarım arazileri"
+      ],
+      "yogunluk": 10
+    },
+    {
+      "slug": "mihaliccik",
+      "ad": "Mihalıççık",
+      "tip": "İlçe",
+      "nufus": 7605,
+      "yuzolcumu": 1802,
+      "gecim": "Tarım, hayvancılık ve ormancılık",
+      "kaymakamlik": "https://mihaliccik.gov.tr",
+      "ozet": "Sündiken Dağları'nın ormanlık yapısı içinde yer alan, yüzölçümü bakımından ilin en büyük ilçelerinden biridir. Yunus Emre ile ilişkilendirilen kültürel mirası ve Gürleyik mesire alanıyla bilinir.",
+      "one_cikan": [
+        "Gürleyik mesire alanı",
+        "Sündiken Dağları ormanları",
+        "Yunus Emre kültür mirası"
+      ],
+      "yogunluk": 4
+    },
+    {
+      "slug": "mahmudiye",
+      "ad": "Mahmudiye",
+      "tip": "İlçe",
+      "nufus": 7407,
+      "yuzolcumu": 641,
+      "gecim": "Hayvancılık, özellikle at yetiştiriciliği",
+      "kaymakamlik": "https://mahmudiye.gov.tr",
+      "ozet": "Safkan Arap atı yetiştiriciliğinde Türkiye'nin en önemli merkezlerinden biridir. Osmanlı döneminde kurulan Çiftlik-i Hümayun geleneği bugün de sürdürülmektedir.",
+      "one_cikan": [
+        "Safkan Arap atı yetiştiriciliği",
+        "Tarihi hara geleneği",
+        "Binicilik ve at turizmi"
+      ],
+      "yogunluk": 12
+    },
+    {
+      "slug": "inonu",
+      "ad": "İnönü",
+      "tip": "İlçe",
+      "nufus": 6114,
+      "yuzolcumu": 391,
+      "gecim": "Tarım ve sanayi",
+      "kaymakamlik": "https://inonu.gov.tr",
+      "ozet": "Kurtuluş Savaşı'nın dönüm noktası olan İnönü Muharebeleri'ne adını veren ilçedir. Tarımsal üretimin yanında havacılık ve sanayi yatırımlarıyla öne çıkar.",
+      "one_cikan": [
+        "İnönü Muharebeleri tarihi alanı",
+        "Havacılık ve planörcülük",
+        "Tarımsal üretim"
+      ],
+      "yogunluk": 16
+    },
+    {
+      "slug": "beylikova",
+      "ad": "Beylikova",
+      "tip": "İlçe",
+      "nufus": 5611,
+      "yuzolcumu": 741,
+      "gecim": "Tarım ve hayvancılık",
+      "kaymakamlik": "https://beylikova.gov.tr",
+      "ozet": "Porsuk Çayı kıyısındaki verimli arazilerde tarım ve hayvancılığın belirleyici olduğu ilçedir. Damızlık sığır yetiştiriciliğinde önemli bir kapasiteye sahiptir.",
+      "one_cikan": [
+        "Damızlık sığır yetiştiriciliği",
+        "Porsuk kıyısı tarım arazileri",
+        "Kırsal kalkınma potansiyeli"
+      ],
+      "yogunluk": 8
+    },
+    {
+      "slug": "gunyuzu",
+      "ad": "Günyüzü",
+      "tip": "İlçe",
+      "nufus": 5008,
+      "yuzolcumu": 762,
+      "gecim": "Tarım ve hayvancılık",
+      "kaymakamlik": "https://gunyuzu.gov.tr",
+      "ozet": "Sakarya Muharebesi'nin geçtiği topraklarda yer alan, geniş kırsal alanlara sahip ilçedir. Tarım ve hayvancılığın yanında termal kaynak potansiyeli taşır.",
+      "one_cikan": [
+        "Sakarya Muharebesi tarihi alanı",
+        "Termal kaynak potansiyeli",
+        "Geniş kırsal araziler"
+      ],
+      "yogunluk": 7
+    },
+    {
+      "slug": "saricakaya",
+      "ad": "Sarıcakaya",
+      "tip": "İlçe",
+      "nufus": 4477,
+      "yuzolcumu": 405,
+      "gecim": "Seracılık ve meyvecilik",
+      "kaymakamlik": "https://saricakaya.gov.tr",
+      "ozet": "Sakarya Vadisi'ndeki özel mikro-klimasıyla ilin diğer bölgelerinden ayrılır. Bu iklim avantajı sayesinde örtü altı yetiştiricilik ve meyvecilikte öne çıkar.",
+      "one_cikan": [
+        "Mikro-klima ve örtü altı üretim",
+        "Meyvecilik",
+        "Sakarya Vadisi doğal yapısı"
+      ],
+      "yogunluk": 11
+    },
+    {
+      "slug": "mihalgazi",
+      "ad": "Mihalgazi",
+      "tip": "İlçe",
+      "nufus": 2861,
+      "yuzolcumu": 225,
+      "gecim": "Tarım, ormancılık ve termal turizm",
+      "kaymakamlik": "https://mihalgazi.gov.tr",
+      "ozet": "Sakarya Vadisi'nin ormanlarla çevrili kesiminde yer alır. Sakarıılıca termal kaynakları ve doğa turizmi potansiyeli ilçenin en belirgin değerleridir.",
+      "one_cikan": [
+        "Sakarıılıca termal kaynakları",
+        "Orman ve doğa turizmi",
+        "Vadi tarımı"
+      ],
+      "yogunluk": 13
+    },
+    {
+      "slug": "han",
+      "ad": "Han",
+      "tip": "İlçe",
+      "nufus": 2126,
+      "yuzolcumu": 368,
+      "gecim": "Tarım ve hayvancılık",
+      "kaymakamlik": "https://han.gov.tr",
+      "ozet": "İlin nüfus bakımından en küçük ilçesidir. Frig Yolu üzerindeki konumu, kaya yerleşimleri ve el değmemiş doğal dokusuyla kültür turizmi potansiyeli taşır.",
+      "one_cikan": [
+        "Frig Yolu güzergâhı",
+        "Kaya yerleşimleri",
+        "Doğal ve sakin kırsal doku"
+      ],
+      "yogunluk": 6
+    }
+  ],
+  "kaynak_yuzolcumu": "İlçe sınır alanlarından hesaplanmıştır; 14 ilçe toplamı 13.978 km² (resmî il alanı 13.960 km²)."
+}
